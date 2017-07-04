@@ -1,0 +1,7 @@
+================================================================================
+time: 2017-07-04 09:45:33
+from: 127.0.0.1
+page: /
+error: 42S22：["42S22",1054,"Unknown column 'isdel' in 'where clause'"]
+param: SELECT * FROM `blog_article` WHERE isdel =0 AND isopen=1 
+
