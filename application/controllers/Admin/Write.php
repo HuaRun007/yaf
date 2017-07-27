@@ -92,4 +92,26 @@ class  Admin_WriteController extends Yaf_Controller_Abstract
         }
     }
 
+    /**
+     * 所有文章的list頁面
+     * @return [type] [description]
+     */
+    public function listAction()
+    {
+        return $this->getView()->make('Admin.write.articlelist', []);
+    }
+
+    /**
+     * 傳輸文章list的数据
+     * @return [array] [description]
+     */
+    public function articlelistJsonAction()
+    {
+        $S = new Admin_SystemModel(Yaf_Registry::get("db"), Yaf_Registry::get('mc') );
+        $search = array();
+        $data = $S->getarticleList($search);
+
+        echo json_encode($data);
+
+    }
 }

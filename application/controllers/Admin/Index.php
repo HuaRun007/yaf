@@ -9,7 +9,7 @@ class Admin_IndexController extends Yaf_Controller_Abstract
 {
           public function indexAction()
           {
-              return $this->getView()->make('Admin.index.index',[]);
+              return $this->getView()->make('Admin.index',[]);
           }
 
 }

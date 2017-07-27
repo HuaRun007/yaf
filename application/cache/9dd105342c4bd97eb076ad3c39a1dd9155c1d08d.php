@@ -16,7 +16,7 @@
     <link rel="icon" href="/static/images/logo.png">
 
 
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/home_style.css">
 
     <link rel="stylesheet" href="/static/css/download.css">
 
@@ -246,7 +246,7 @@
 //            console.log(banner.length,index);
             bannerNode.attr('style','background-image:url(http://web.yaf.com/static/banner/'+banner[index]+'.jpg)');
             //bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
-            console.log('http://web.yaf.com/banner/'+banner[index]+'.jpg');
+            // console.log('http://web.yaf.com/banner/'+banner[index]+'.jpg');
         }
     })
 </script>

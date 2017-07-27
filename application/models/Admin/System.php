@@ -63,4 +63,15 @@ class Admin_SystemModel
     {
         return unlink(APP_PATH.'/public/static/content/'.$url);
     }
+
+    /**
+     * 获取文章list数据
+     * @return [type] [description]
+     */
+    public function getarticleList()
+    {
+        $sql = "SELECT * FROM `blog_article` WHERE isdel=0 ";
+        $result['list'] = $this->dbh->select($sql);
+        return $result;
+    }
 }

@@ -16,7 +16,7 @@
     <link rel="icon" href="/static/images/logo.png">
 
 
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/home_style.css">
 
     <link rel="stylesheet" href="/static/css/download.css">
 
