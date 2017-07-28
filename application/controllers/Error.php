@@ -5,7 +5,7 @@
  * @version $Id$
  * @access  public
  */
-class ErrorController extends Yaf_Bootstrap_Abstract
+class ErrorController extends yaf_controller_abstract
 {
     public  $request;
     public function init(){
@@ -21,14 +21,14 @@ class ErrorController extends Yaf_Bootstrap_Abstract
     {
         $params = [];
         if(!Yaf_Registry::get('api')){
-            return $this->getView()->make('exception', $params);
+            $this->getView()->display('exception', $params);
         }
         $config = Yaf_Registry::get('config');
         $apiExt = $config->get("apiExt");
         $result = [
-            'code' => 200,
-            'message' => '',
-            'ext' => '',
+                'code' => 200,
+                'message' => '',
+                'ext' => '',
         ];
         switch ($exception->getCode()) {
             case YAF_ERR_NOTFOUND_MODULE:
@@ -40,23 +40,23 @@ class ErrorController extends Yaf_Bootstrap_Abstract
                 break;
             case YAF_ERR_NOTFOUND_CONTROLLER:
                 $result = [
-                    'code' => 404,
-                    'message' => $exception ->getMessage(),
-                    'ext' => '未找到CONTROLLER',
+                        'code' => 404,
+                        'message' => $exception ->getMessage(),
+                        'ext' => '未找到CONTROLLER',
                 ];
                 break;
             case YAF_ERR_NOTFOUND_ACTION:
                 $result = [
-                    'code' => 404,
-                    'message' => $exception ->getMessage(),
-                    'ext' => '未找到ACTION',
+                        'code' => 404,
+                        'message' => $exception ->getMessage(),
+                        'ext' => '未找到ACTION',
                 ];
                 break;
             case YAF_ERR_NOTFOUND_VIEW:
                 $result = [
-                    'code' => 404,
-                    'message' => $exception ->getMessage(),
-                    'ext' => '未找到VIEW',
+                        'code' => 404,
+                        'message' => $exception ->getMessage(),
+                        'ext' => '未找到VIEW',
                 ];
                 break;
             default :

@@ -69,13 +69,13 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 	/**
 	 * 指定视图引擎
 	 */
-	public function _initView(Yaf_Dispatcher $dispatcher) {
-		#Yaf_Dispatcher::getInstance()->disableView();
+// 	public function _initView(Yaf_Dispatcher $dispatcher) {
+// 		#Yaf_Dispatcher::getInstance()->disableView();
 
 
-		$dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
-//		Yaf_Registry::set('view', true);
-	}
+// 		$dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
+// //		Yaf_Registry::set('view', true);
+// 	}
 
 	/**
 	 * 添加路由规则
@@ -90,5 +90,17 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 		}
 	}
 
+	/**
+	 * smarty 视图引擎
+	 * @param  Yaf_Dispatcher $dispatcher [description]
+	 * @return [type]                     [description]
+	 */
+	public function _initView(Yaf_Dispatcher $dispatcher){
+      //在这里注册自己的view控制器，例如smarty,firekylin
+        // $smarty = new Smarty_Adapter(null, Yaf_Registry::get("config")->get("smarty"));
+        // Yaf_Dispatcher::getInstance()->setView($smarty);
+         $smarty = new Smarty_Adapter(null, Yaf_Application::app()->getConfig()->smarty);
+  		Yaf_Dispatcher::getInstance()->setView($smarty);
+   }
 
 }

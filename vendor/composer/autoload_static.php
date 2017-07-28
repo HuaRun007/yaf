@@ -10,6 +10,7 @@ class ComposerStaticInit67bb9dee5c57b3aaadfbf9171885a505
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '7a3a3ddf55aa5bdbff2cc90a2e666654' => __DIR__ . '/..' . '/hprose/hprose/src/Hprose.php',
+        'f084d01b0a599f67676cffef638aa95b' => __DIR__ . '/..' . '/smarty/smarty/libs/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (

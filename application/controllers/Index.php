@@ -11,8 +11,11 @@ class Indexcontroller extends Yaf_Controller_Abstract
     public function indexAction()
     {
     	$I = new IndexModel(Yaf_Registry::get("db"), Yaf_Registry::get('mc') );
-        $params['articleList'] = $I->getArticlelist(); 
-        return $this->getView()->make('Home.index.index',$params);
+        $articleList = $I->getArticlelist(); 
+        $this->getView()->assign('articleList', $articleList);
+
+        $this->getView()->display("Home/index.php");
+
     }
 
     public function seeAction()
@@ -23,6 +26,8 @@ class Indexcontroller extends Yaf_Controller_Abstract
     	$articleInfo = $I->getInfoById($id);
     	$params = $articleInfo;
     	$params['content'] = file_get_contents($articleInfo['content']);
-        return $this->getView()->make('Home.index.content',$params);
+        $this->getView()->assign('params', $params);
+        $this->getView()->display('Home/content.php');
+
     }
 }
