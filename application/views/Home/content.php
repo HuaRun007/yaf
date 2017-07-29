@@ -146,25 +146,10 @@
 <script src="/static/js/lib.js"></script>
 <script src="/static/js/prettify.js"></script>
 <script src="/static/js/module.js"></script>
-{{--<script src="./js/script.js"></script>--}}
-{{--<script type='text/javascript'>
-    //代码高亮
-    $(document).ready(function(){
-         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-           prettyPrint();
-    });
-</script>--}}
+
 <!--baidu-->
 
-{{-- <script>
-var _hmt = _hmt || [];
-(function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?5c399a6571456ab7f05e2c4dc81303fe";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
-</script> --}}
+
 
 <script type="text/javascript" color="205,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"></script><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
 <script>

@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-07-29 13:41:11
+  from "D:\www\yaf\application\views\Home\content.php" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_597c1ff730fb59_38888063',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '0932cbc49c8e5972ebb8f31a7b83bd7bf4876f15' => 
+    array (
+      0 => 'D:\\www\\yaf\\application\\views\\Home\\content.php',
+      1 => 1501298704,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_597c1ff730fb59_38888063 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 
 <html>
@@ -75,10 +99,12 @@
 <!--文章列表-->
 <div class="wrapper">
 	<article class="post-14 post type-post status-publish format-image hentry category-uncategorized post_format-post-format-image">
-	<h1 class="post-title" itemprop="name"><?php echo e($title); ?></h1>
+	<h1 class="post-title" itemprop="name"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</h1>
 	<br>
 	<div ng-bind-html-unsafe="article.content" id="content">
-	<!-- <?php echo e($content); ?> -->
+	<!-- <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+ -->
 	</div>
 	</article>
 </div>
@@ -134,7 +160,8 @@
         </div>
     </div>
 </div>
-<input type="hidden" id="hidecontent" value="<?php echo e($content); ?>">
+<input type="hidden" id="hidecontent" value="<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+">
 <footer class="footer" role="contentinfo">
     <div class="wrapper wrapper--wide split split--responsive">
         <span>Theme by <a href="http://github.com/yumemor">Yumemor</a>. Powered by <a href="http://hexo.io">Hexo</a> | &copy 2017 哎哟喂</span>
@@ -142,18 +169,28 @@
 </footer>
 
 <!--这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-<!--<script src="js/jquery.min.js"></script>-->
-<script src="/static/js/lib.js"></script>
-<script src="/static/js/prettify.js"></script>
-<script src="/static/js/module.js"></script>
-
+<!--<?php echo '<script'; ?>
+ src="js/jquery.min.js"><?php echo '</script'; ?>
+>-->
+<?php echo '<script'; ?>
+ src="/static/js/lib.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/static/js/prettify.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/static/js/module.js"><?php echo '</script'; ?>
+>
 
 <!--baidu-->
 
 
 
-<script type="text/javascript" color="205,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"></script><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
-<script>
+<?php echo '<script'; ?>
+ type="text/javascript" color="205,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"><?php echo '</script'; ?>
+><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
+<?php echo '<script'; ?>
+>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -162,8 +199,10 @@
     ga('create', 'UA-46156385-1', 'cssscript.com');
     ga('send', 'pageview');
 
-</script>
-<script>
+<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
     $(function(){
 
         var navToggle = $('#nav-toggle'),
@@ -225,13 +264,16 @@
         }
     })
     $(function(){
-    	var data = '<?php echo e($content); ?>';
+    	var data = '<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+';
     	var content = $('#hidecontent').html(data).text() 
     	$('#content').html(content);
     })
-</script>
+<?php echo '</script'; ?>
+>
 
 
 
 </body>
-</html>
+</html><?php }
+}

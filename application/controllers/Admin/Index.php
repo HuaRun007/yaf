@@ -9,7 +9,8 @@ class Admin_IndexController extends Yaf_Controller_Abstract
 {
           public function indexAction()
           {
-            $this->getView()->display("Admin/index.php");
+            $this->getView()->display("Admin/login.php");
+            return false;
           }
 
 }

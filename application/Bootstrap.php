@@ -38,12 +38,12 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 			$redis->port
 		));*/
 
-/*		$session = Yaf_Session::getInstance();
+		$session = Yaf_Session::getInstance();
 		if ($session->has(SSN_VAR)) {
 			Yaf_Registry::set(SSN_VAR, $session->get(SSN_VAR));
 		} else {
 			Yaf_Registry::set(SSN_VAR, false);
-		}*/
+		}
 
 
 		
@@ -52,7 +52,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 	/**
 	 * 注册插件
 	 */
-/*	public function _initPlugin(Yaf_Dispatcher $dispatcher) {
+	public function _initPlugin(Yaf_Dispatcher $dispatcher) {
 
 		$config = Yaf_Application::app()->getConfig();
 		$sys = $config->get("sys");
@@ -62,20 +62,21 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 			$dispatcher->registerPlugin($g);
 		}
 
-		$p = new PrivilegePlugin();
-		$dispatcher->registerPlugin($p);
-	}*/
+		// $p = new PrivilegePlugin();
+		// $dispatcher->registerPlugin($p);
+	}
 
 	/**
 	 * 指定视图引擎
 	 */
-// 	public function _initView(Yaf_Dispatcher $dispatcher) {
-// 		#Yaf_Dispatcher::getInstance()->disableView();
+	public function _initView(Yaf_Dispatcher $dispatcher) {
+		#Yaf_Dispatcher::getInstance()->disableView();
 
 
-// 		$dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
-// //		Yaf_Registry::set('view', true);
-// 	}
+		// $dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
+		$smarty = new Smarty_Adapter(null, Yaf_Application::app()->getConfig()->smarty);
+  		Yaf_Dispatcher::getInstance()->setView($smarty);
+	}
 
 	/**
 	 * 添加路由规则
@@ -90,17 +91,5 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 		}
 	}
 
-	/**
-	 * smarty 视图引擎
-	 * @param  Yaf_Dispatcher $dispatcher [description]
-	 * @return [type]                     [description]
-	 */
-	public function _initView(Yaf_Dispatcher $dispatcher){
-      //在这里注册自己的view控制器，例如smarty,firekylin
-        // $smarty = new Smarty_Adapter(null, Yaf_Registry::get("config")->get("smarty"));
-        // Yaf_Dispatcher::getInstance()->setView($smarty);
-         $smarty = new Smarty_Adapter(null, Yaf_Application::app()->getConfig()->smarty);
-  		Yaf_Dispatcher::getInstance()->setView($smarty);
-   }
 
 }

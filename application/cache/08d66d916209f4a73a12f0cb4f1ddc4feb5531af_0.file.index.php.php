@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-07-29 11:36:21
+  from "D:\www\yaf\application\views\Home\index.php" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_597c02b52b8672_73452338',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '08d66d916209f4a73a12f0cb4f1ddc4feb5531af' => 
+    array (
+      0 => 'D:\\www\\yaf\\application\\views\\Home\\index.php',
+      1 => 1501298636,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_597c02b52b8672_73452338 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 
 <html>
@@ -87,17 +111,30 @@
             </h2>
         </li> -->
 
-        <?php $__currentLoopData = $articleList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k => $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['articleList']->value, 'item', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['item']->value) {
+?>
         <li class="post">
-            <?php if($k==0): ?>
+            <?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>
             <i class="post-status iconfont icon-icon"></i>
-            <?php endif; ?>
+            <?php }?>
             <h2 class="no-background"  >
-                <span><a href="/index/see?id=<?php echo e($item['id']); ?>"><?php echo e($item['title']); ?></a></span>
-                <time class="post-time" datetime="2017-05-02T11:00:05.000Z" itemprop="datePublished"><?php echo e(date('Y-m-d',strtotime($item['updated_time']))); ?></time>
+                <span><a href="/index/see?id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</a></span>
+                <time class="post-time" datetime="2017-05-02T11:00:05.000Z" itemprop="datePublished"><?php echo date('Y-m-d',strtotime($_smarty_tpl->tpl_vars['item']->value['updated_time']));?>
+</time>
             </h2>
         </li>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
+    </ul>
 
 
     </ul>
@@ -167,18 +204,47 @@
 </footer>
 
 <!--这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-<!--<script src="js/jquery.min.js"></script>-->
-<script src="/static/js/lib.js"></script>
-<script src="/static/js/prettify.js"></script>
-<script src="/static/js/module.js"></script>
+<!--<?php echo '<script'; ?>
+ src="js/jquery.min.js"><?php echo '</script'; ?>
+>-->
+<?php echo '<script'; ?>
+ src="/static/js/lib.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/static/js/prettify.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="/static/js/module.js"><?php echo '</script'; ?>
+>
 
-
+<!-- <?php echo '<script'; ?>
+ type='text/javascript'>
+    //代码高亮
+    $(document).ready(function(){
+         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+           prettyPrint();
+    });
+<?php echo '</script'; ?>
+> -->
 <!--baidu-->
 
+<!--  <?php echo '<script'; ?>
+>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?5c399a6571456ab7f05e2c4dc81303fe";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+<?php echo '</script'; ?>
+> -->
 
-
-<script type="text/javascript" color="105,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"></script><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
-<script>
+<?php echo '<script'; ?>
+ type="text/javascript" color="105,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"><?php echo '</script'; ?>
+><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
+<?php echo '<script'; ?>
+>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -187,8 +253,10 @@
     ga('create', 'UA-46156385-1', 'cssscript.com');
     ga('send', 'pageview');
 
-</script>
-<script>
+<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
     $(function(){
 
         var navToggle = $('#nav-toggle'),
@@ -249,9 +317,11 @@
             // console.log('http://web.yaf.com/banner/'+banner[index]+'.jpg');
         }
     })
-</script>
+<?php echo '</script'; ?>
+>
 
 
 
 </body>
-</html>
+</html><?php }
+}

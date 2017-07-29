@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-07-28 17:21:47
+/* Smarty version 3.1.31, created on 2017-07-29 17:14:04
   from "D:\www\yaf\application\views\Admin\index.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_597b022bd40557_32195531',
+  'unifunc' => 'content_597c51dc22ecf5_80287112',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93331af9713c0b40bf9a5b97a53690b765114a4a' => 
     array (
       0 => 'D:\\www\\yaf\\application\\views\\Admin\\index.php',
-      1 => 1500898059,
+      1 => 1501319643,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597b022bd40557_32195531 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597c51dc22ecf5_80287112 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
 	
-	<!-- start: Meta -->
-	<meta charset="utf-8">
-	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
-	<meta name="description" content="Bootstrap Metro Dashboard">
-	<meta name="author" content="Dennis Ji">
-	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-	<!-- end: Meta -->
-	
-	<!-- start: Mobile Specific -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- end: Mobile Specific -->
-	<block name="css">
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+    <meta name="description" content="Bootstrap Metro Dashboard">
+    <meta name="author" content="Dennis Ji">
+    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <!-- end: Meta -->
+    
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end: Mobile Specific -->
 	<!-- start: CSS -->
 	<link id="bootstrap-style" href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -45,7 +47,7 @@ function content_597b022bd40557_32195531 (Smarty_Internal_Template $_smarty_tpl)
 	<link id="base-style-responsive" href="/static/css/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
-	</block>
+	
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -64,9 +66,159 @@ function content_597b022bd40557_32195531 (Smarty_Internal_Template $_smarty_tpl)
 	<!-- end: Favicon -->
 	
 		
-		
-		
+	<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21080597c51dc1e0c82_12857605', "css");
+?>
+	
 </head>
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11861597c51dc1e5505_29351818', "body");
+?>
+
+
+        <?php echo '<script'; ?>
+ src="/static/js/jquery-1.9.1.min.js"><?php echo '</script'; ?>
+>
+       <?php echo '<script'; ?>
+ src="/static/js/jquery-migrate-1.0.0.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery-ui-1.10.0.custom.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.ui.touch-punch.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/modernizr.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.cookie.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src='/static/js/fullcalendar.min.js'><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src='/static/js/jquery.dataTables.min.js'><?php echo '</script'; ?>
+>
+
+        <?php echo '<script'; ?>
+ src="/static/js/excanvas.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.flot.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.flot.pie.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.flot.stack.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.flot.resize.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.chosen.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.uniform.min.js"><?php echo '</script'; ?>
+>
+        
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.cleditor.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.noty.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.elfinder.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.raty.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.iphone.toggle.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.uploadify-3.1.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.gritter.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.imagesloaded.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.masonry.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.knob.modified.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/jquery.sparkline.min.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/counter.js"><?php echo '</script'; ?>
+>
+    
+        <?php echo '<script'; ?>
+ src="/static/js/retina.js"><?php echo '</script'; ?>
+>
+
+        <?php echo '<script'; ?>
+ src="/static/js/custom.js"><?php echo '</script'; ?>
+>
+</html>
+<?php }
+/* {block "css"} */
+class Block_21080597c51dc1e0c82_12857605 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'css' => 
+  array (
+    0 => 'Block_21080597c51dc1e0c82_12857605',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+	
+	<?php
+}
+}
+/* {/block "css"} */
+/* {block "body"} */
+class Block_11861597c51dc1e5505_29351818 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'body' => 
+  array (
+    0 => 'Block_11861597c51dc1e5505_29351818',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
 
 <body>
 		<!-- start: Header -->
@@ -382,7 +534,17 @@ function content_597b022bd40557_32195531 (Smarty_Internal_Template $_smarty_tpl)
 						<li><a href="calendar.html"><i class="icon-calendar"></i><span class="hidden-tablet"> Calendar</span></a></li>
 						<li><a href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li>
 						<li><a href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> Icons</span></a></li>
-						<li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> Login Page</span></a></li>
+
+						<li>
+                            <a class="dropmenu" href="#"><i class="icon-align-justify"></i><span class="hidden-tablet"> 文章</span></a>
+                            <ul>
+                                <li><a class="submenu" href="#"><i class="icon-file-alt"></i><span class="hidden-tablet"> 所有文章</span></a></li>
+                                <li><a class="submenu" href="submenu.html"><i class="icon-pencil"></i><span class="hidden-tablet"> 写文章</span></a></li>
+                                <li><a class="submenu" href="submenu3.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> 分类目录</span></a></li>
+                                <li><a class="submenu" href="submenu3.html"><i class="icon-tags"></i><span class="hidden-tablet"> 标签</span></a></li>
+                            </ul>
+                        </li>
+
 					</ul>
 				</div>
 			</div>
@@ -1075,127 +1237,13 @@ function content_597b022bd40557_32195531 (Smarty_Internal_Template $_smarty_tpl)
 		</p>
 
 	</footer>
-	
-	<block name="js">
-	<!-- start: JavaScript-->
+    <!-- start: JavaScript-->
 
-		<?php echo '<script'; ?>
- src="/static/js/jquery-1.9.1.min.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="/static/js/jquery-migrate-1.0.0.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery-ui-1.10.0.custom.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.ui.touch-punch.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/modernizr.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/bootstrap.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.cookie.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src='/static/js/fullcalendar.min.js'><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src='/static/js/jquery.dataTables.min.js'><?php echo '</script'; ?>
->
-
-		<?php echo '<script'; ?>
- src="/static/js/excanvas.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="/static/js/jquery.flot.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="/static/js/jquery.flot.pie.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="/static/js/jquery.flot.stack.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="/static/js/jquery.flot.resize.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.chosen.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.uniform.min.js"><?php echo '</script'; ?>
->
-		
-		<?php echo '<script'; ?>
- src="/static/js/jquery.cleditor.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.noty.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.elfinder.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.raty.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.iphone.toggle.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.uploadify-3.1.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.gritter.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.imagesloaded.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.masonry.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.knob.modified.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/jquery.sparkline.min.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/counter.js"><?php echo '</script'; ?>
->
-	
-		<?php echo '<script'; ?>
- src="/static/js/retina.js"><?php echo '</script'; ?>
->
-
-		<?php echo '<script'; ?>
- src="/static/js/custom.js"><?php echo '</script'; ?>
->
-	<!-- end: JavaScript-->
-	</block>
+    <!-- end: JavaScript-->
+    
 </body>
-</html>
-<?php }
+<?php
+}
+}
+/* {/block "body"} */
 }

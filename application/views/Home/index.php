@@ -87,17 +87,18 @@
             </h2>
         </li> -->
 
-        @foreach($articleList as $k => $item)
+    {{foreach $articleList as $k => $item}}
         <li class="post">
-            @if($k==0)
+            {{if $k==0 }}
             <i class="post-status iconfont icon-icon"></i>
-            @endif
+            {{/if}}
             <h2 class="no-background"  >
                 <span><a href="/index/see?id={{$item['id']}}">{{$item['title']}}</a></span>
-                <time class="post-time" datetime="2017-05-02T11:00:05.000Z" itemprop="datePublished">{{ date('Y-m-d',strtotime($item['updated_time']))}}</time>
+                <time class="post-time" datetime="2017-05-02T11:00:05.000Z" itemprop="datePublished">{{date('Y-m-d',strtotime($item['updated_time']))}}</time>
             </h2>
         </li>
-        @endforeach    
+    {{/foreach}}
+    </ul>
 
 
     </ul>
@@ -171,17 +172,17 @@
 <script src="/static/js/lib.js"></script>
 <script src="/static/js/prettify.js"></script>
 <script src="/static/js/module.js"></script>
-{{--<script src="./js/script.js"></script>--}}
-{{--<script type='text/javascript'>
+
+<!-- <script type='text/javascript'>
     //代码高亮
     $(document).ready(function(){
          $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
            prettyPrint();
     });
-</script>--}}
+</script> -->
 <!--baidu-->
 
-{{-- <script>
+<!--  <script>
 var _hmt = _hmt || [];
 (function() {
     var hm = document.createElement("script");
@@ -189,7 +190,7 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
 })();
-</script> --}}
+</script> -->
 
 <script type="text/javascript" color="105,205,255" opacity="0.7" zindex="-2" count="300" src="/static/js/canvas-nest.js"></script><canvas id="c_n3" width="1920" height="949" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 0.7;"></canvas>
 <script>
