@@ -57,10 +57,10 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 		$config = Yaf_Application::app()->getConfig();
 		$sys = $config->get("sys");
 
-		if ($sys->encrypt) {
-			$g = new GlobalPlugin();
-			$dispatcher->registerPlugin($g);
-		}
+		// if ($sys->encrypt) {
+		// 	$g = new GlobalPlugin();
+		// 	$dispatcher->registerPlugin($g);
+		// }
 
 		// $p = new PrivilegePlugin();
 		// $dispatcher->registerPlugin($p);
@@ -74,8 +74,8 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 
 
 		// $dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
-		$smarty = new Smarty_Adapter(null, Yaf_Application::app()->getConfig()->smarty);
-  		Yaf_Dispatcher::getInstance()->setView($smarty);
+		$smarty = new Smarty_Adapter(APP_PATH . '/application/views', Yaf_Application::app()->getConfig()->smarty);
+  		$dispatcher->setView($smarty);
 	}
 
 	/**

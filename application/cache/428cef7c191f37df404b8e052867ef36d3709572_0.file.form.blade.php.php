@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-08-03 11:22:24
+  from "D:\www\yaf\application\views\Admin\form.blade.php" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_598296f0e667d3_02322172',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '428cef7c191f37df404b8e052867ef36d3709572' => 
+    array (
+      0 => 'D:\\www\\yaf\\application\\views\\Admin\\form.blade.php',
+      1 => 1501730338,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_598296f0e667d3_02322172 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +49,9 @@
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  	<?php echo '<script'; ?>
+ src="http://html5shim.googlecode.com/svn/trunk/html5.js"><?php echo '</script'; ?>
+>
 		<link id="ie-style" href="css/ie.css" rel="stylesheet">
 	<![endif]-->
 	
@@ -735,61 +761,123 @@
 	
 	<!-- start: JavaScript-->
 
-		<script src="/static/js/jquery-1.9.1.min.js"></script>
-	<script src="/static/js/jquery-migrate-1.0.0.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery-1.9.1.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="/static/js/jquery-migrate-1.0.0.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery-ui-1.10.0.custom.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery-ui-1.10.0.custom.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.ui.touch-punch.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.ui.touch-punch.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/modernizr.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/modernizr.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/bootstrap.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.cookie.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.cookie.js"><?php echo '</script'; ?>
+>
 	
-		<script src='/static/js/fullcalendar.min.js'></script>
+		<?php echo '<script'; ?>
+ src='/static/js/fullcalendar.min.js'><?php echo '</script'; ?>
+>
 	
-		<script src='/static/js/jquery.dataTables.min.js'></script>
+		<?php echo '<script'; ?>
+ src='/static/js/jquery.dataTables.min.js'><?php echo '</script'; ?>
+>
 
-		<script src="/static/js/excanvas.js"></script>
-	<script src="/static/js/jquery.flot.js"></script>
-	<script src="/static/js/jquery.flot.pie.js"></script>
-	<script src="/static/js/jquery.flot.stack.js"></script>
-	<script src="/static/js/jquery.flot.resize.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/excanvas.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="/static/js/jquery.flot.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="/static/js/jquery.flot.pie.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="/static/js/jquery.flot.stack.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="/static/js/jquery.flot.resize.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.chosen.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.chosen.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.uniform.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.uniform.min.js"><?php echo '</script'; ?>
+>
 		
-		<script src="/static/js/jquery.cleditor.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.cleditor.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.noty.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.noty.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.elfinder.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.elfinder.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.raty.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.raty.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.iphone.toggle.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.iphone.toggle.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.uploadify-3.1.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.uploadify-3.1.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.gritter.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.gritter.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.imagesloaded.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.imagesloaded.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.masonry.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.masonry.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.knob.modified.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.knob.modified.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/jquery.sparkline.min.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/jquery.sparkline.min.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/counter.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/counter.js"><?php echo '</script'; ?>
+>
 	
-		<script src="/static/js/retina.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/retina.js"><?php echo '</script'; ?>
+>
 
-		<script src="/static/js/custom.js"></script>
+		<?php echo '<script'; ?>
+ src="/static/js/custom.js"><?php echo '</script'; ?>
+>
 	<!-- end: JavaScript-->
 	
 </body>
 </html>
+<?php }
+}

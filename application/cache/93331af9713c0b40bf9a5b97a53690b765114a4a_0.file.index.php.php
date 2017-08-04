@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-07-29 17:14:04
+/* Smarty version 3.1.31, created on 2017-08-04 09:55:35
   from "D:\www\yaf\application\views\Admin\index.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_597c51dc22ecf5_80287112',
+  'unifunc' => 'content_5983d417c04b00_22005522',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93331af9713c0b40bf9a5b97a53690b765114a4a' => 
     array (
       0 => 'D:\\www\\yaf\\application\\views\\Admin\\index.php',
-      1 => 1501319643,
+      1 => 1501811646,
       2 => 'file',
     ),
   ),
@@ -20,207 +20,29 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597c51dc22ecf5_80287112 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5983d417c04b00_22005522 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
-$_smarty_tpl->inheritance->init($_smarty_tpl, false);
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-	
-    <!-- start: Meta -->
-    <meta charset="utf-8">
-    <title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
-    <meta name="description" content="Bootstrap Metro Dashboard">
-    <meta name="author" content="Dennis Ji">
-    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <!-- end: Meta -->
-    
-    <!-- start: Mobile Specific -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- end: Mobile Specific -->
-	<!-- start: CSS -->
-	<link id="bootstrap-style" href="/static/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link id="base-style" href="/static/css/style.css" rel="stylesheet">
-	<link id="base-style-responsive" href="/static/css/style-responsive.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-	<!-- end: CSS -->
-	
 
-	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  	<?php echo '<script'; ?>
- src="http://html5shim.googlecode.com/svn/trunk/html5.js"><?php echo '</script'; ?>
->
-		<link id="ie-style" href="css/ie.css" rel="stylesheet">
-	<![endif]-->
-	
-	<!--[if IE 9]>
-		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
-	<![endif]-->
-		
-	<!-- start: Favicon -->
-	<link rel="shortcut icon" href="/static/images/favicon.ico">
-	<!-- end: Favicon -->
-	
-		
-	<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21080597c51dc1e0c82_12857605', "css");
-?>
-	
-</head>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11861597c51dc1e5505_29351818', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_213455983d417bc4ec6_84909251', "body");
 ?>
 
-
-        <?php echo '<script'; ?>
- src="/static/js/jquery-1.9.1.min.js"><?php echo '</script'; ?>
->
-       <?php echo '<script'; ?>
- src="/static/js/jquery-migrate-1.0.0.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery-ui-1.10.0.custom.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.ui.touch-punch.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/modernizr.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/bootstrap.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.cookie.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src='/static/js/fullcalendar.min.js'><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src='/static/js/jquery.dataTables.min.js'><?php echo '</script'; ?>
->
-
-        <?php echo '<script'; ?>
- src="/static/js/excanvas.js"><?php echo '</script'; ?>
->
-        <?php echo '<script'; ?>
- src="/static/js/jquery.flot.js"><?php echo '</script'; ?>
->
-        <?php echo '<script'; ?>
- src="/static/js/jquery.flot.pie.js"><?php echo '</script'; ?>
->
-        <?php echo '<script'; ?>
- src="/static/js/jquery.flot.stack.js"><?php echo '</script'; ?>
->
-        <?php echo '<script'; ?>
- src="/static/js/jquery.flot.resize.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.chosen.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.uniform.min.js"><?php echo '</script'; ?>
->
-        
-        <?php echo '<script'; ?>
- src="/static/js/jquery.cleditor.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.noty.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.elfinder.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.raty.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.iphone.toggle.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.uploadify-3.1.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.gritter.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.imagesloaded.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.masonry.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.knob.modified.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/jquery.sparkline.min.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/counter.js"><?php echo '</script'; ?>
->
-    
-        <?php echo '<script'; ?>
- src="/static/js/retina.js"><?php echo '</script'; ?>
->
-
-        <?php echo '<script'; ?>
- src="/static/js/custom.js"><?php echo '</script'; ?>
->
-</html>
-<?php }
-/* {block "css"} */
-class Block_21080597c51dc1e0c82_12857605 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'css' => 
-  array (
-    0 => 'Block_21080597c51dc1e0c82_12857605',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-	
-	<?php
+<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Admin/login.php");
 }
-}
-/* {/block "css"} */
 /* {block "body"} */
-class Block_11861597c51dc1e5505_29351818 extends Smarty_Internal_Block
+class Block_213455983d417bc4ec6_84909251 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_11861597c51dc1e5505_29351818',
+    0 => 'Block_213455983d417bc4ec6_84909251',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<body>
 		<!-- start: Header -->
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -401,7 +223,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 										<span class="avatar"><img src="/static/images/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Dennis Ji
+										    	Dennis Ji1
 										     </span>
 											<span class="time">
 										    	6 min
@@ -1241,7 +1063,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
     <!-- end: JavaScript-->
     
-</body>
 <?php
 }
 }

@@ -1,0 +1,14 @@
+================================================================================
+time: 2017-08-04 09:46:09
+from: 127.0.0.1
+page: /Admin_Index/Login
+error: 42000：["42000",1064,"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'password= 2cb962ac59075b964b07' at line 1"]
+param: SELECT * FROM `blog_user`  WHERE isdel=0 AND username= 'admin'  password= 2cb962ac59075b964b07
+
+================================================================================
+time: 2017-08-04 09:46:42
+from: 127.0.0.1
+page: /Admin_Index/Login
+error: 42000：["42000",1064,"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'password = '2cb962ac59075b964b07'' at line 1"]
+param: SELECT * FROM `blog_user`  WHERE isdel=0 AND username= 'admin'  password = '2cb962ac59075b964b07' 
+

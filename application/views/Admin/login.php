@@ -1,14 +1,52 @@
-{{extends file="Admin/index.php"}}
-		
-		
-		
-{{block name="body"}}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
 	
-		<style type="text/css">
-			body { background: url(/static/images/bg-login.jpg) !important; }
-		</style>
-		<div class="container-fluid-full">
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+    <meta name="description" content="Bootstrap Metro Dashboard">
+    <meta name="author" content="Dennis Ji">
+    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <!-- end: Meta -->
+    
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end: Mobile Specific -->
+	<!-- start: CSS -->
+	<link id="bootstrap-style" href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link id="base-style" href="/static/css/style.css" rel="stylesheet">
+	<link id="base-style-responsive" href="/static/css/style-responsive.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- end: CSS -->
+	
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link id="ie-style" href="css/ie.css" rel="stylesheet">
+	<![endif]-->
+	
+	<!--[if IE 9]>
+		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
+	<![endif]-->
+		
+	<!-- start: Favicon -->
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<!-- end: Favicon -->
+	
+	<style type="text/css">
+		body { background: url(/static/images/bg-login.jpg) !important; }
+	</style>
+		
+	{{block name="css"}}	
+	{{/block}}	
+</head>
+<body>
+{{block name="body"}}
+<div class="container-fluid-full">
 		<div class="row-fluid">
 					
 			<div class="row-fluid">
@@ -18,27 +56,30 @@
 						<a href="#"><i class="halflings-icon cog"></i></a>
 					</div>
 					<h2>Login to your account</h2>
-					<form class="form-horizontal" action="index.html" method="post">
+					<form class="form-horizontal" action="/Admin_Index/Login" method="post" data-validator-option="{timely:1, theme:'yellow_top'}">
 						<fieldset>
 							
 							<div class="input-prepend" title="Username">
 								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="username" id="username" type="text" placeholder="type username"/>
+								<input class="input-large span10" name="username"  type="text" data-rule="required;" placeholder="type username"/>
 							</div>
 							<div class="clearfix"></div>
 
 							<div class="input-prepend" title="Password">
 								<span class="add-on"><i class="halflings-icon lock"></i></span>
-								<input class="input-large span10" name="password"  type="password" placeholder="type password"/>
+								<input class="input-large span10" name="password"  type="password" data-rule="required;"  placeholder="type password"/>
 							</div>
 							<div class="clearfix"></div>
 							
-							<label class="remember" for="remember"><input type="checkbox"  />Remember me</label>
+							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 
 							<div class="button-login">	
-								<button type="submit" class="btn btn-primary">Login</button>
+								<button type="submit" class="btn btn-primary">登录</button>
+								<button type="reset" class="btn btn-info">重置</button>
 							</div>
+							<div style="text-align: center;color: red;font-size: 14px;">{{$errMsg}}</div>
 							<div class="clearfix"></div>
+						</fieldset>
 					</form>
 					<hr>
 					<h3>Forgot Password?</h3>
@@ -60,4 +101,62 @@
 				</ul>
 			</div>
 		</div>
-{{/block}}
+		{{/block}}
+</body>
+
+        <script src="/static/js/jquery-1.9.1.min.js"></script>
+       <script src="/static/js/jquery-migrate-1.0.0.min.js"></script>
+    
+        <script src="/static/js/jquery-ui-1.10.0.custom.min.js"></script>
+    
+        <script src="/static/js/jquery.ui.touch-punch.js"></script>
+    
+        <script src="/static/js/modernizr.js"></script>
+    
+        <script src="/static/js/bootstrap.min.js"></script>
+    
+        <script src="/static/js/jquery.cookie.js"></script>
+    
+        <script src='/static/js/fullcalendar.min.js'></script>
+    
+        <script src='/static/js/jquery.dataTables.min.js'></script>
+
+        <script src="/static/js/excanvas.js"></script>
+        <script src="/static/js/jquery.flot.js"></script>
+        <script src="/static/js/jquery.flot.pie.js"></script>
+        <script src="/static/js/jquery.flot.stack.js"></script>
+        <script src="/static/js/jquery.flot.resize.min.js"></script>
+    
+        <script src="/static/js/jquery.chosen.min.js"></script>
+    
+        <script src="/static/js/jquery.uniform.min.js"></script>
+        
+        <script src="/static/js/jquery.cleditor.min.js"></script>
+    
+        <script src="/static/js/jquery.noty.js"></script>
+    
+        <script src="/static/js/jquery.elfinder.min.js"></script>
+    
+        <script src="/static/js/jquery.raty.min.js"></script>
+    
+        <script src="/static/js/jquery.iphone.toggle.js"></script>
+    
+        <script src="/static/js/jquery.uploadify-3.1.min.js"></script>
+    
+        <script src="/static/js/jquery.gritter.min.js"></script>
+    
+        <script src="/static/js/jquery.imagesloaded.js"></script>
+    
+        <script src="/static/js/jquery.masonry.min.js"></script>
+    
+        <script src="/static/js/jquery.knob.modified.js"></script>
+    
+        <script src="/static/js/jquery.sparkline.min.js"></script>
+    
+        <script src="/static/js/counter.js"></script>
+    
+        <script src="/static/js/retina.js"></script>
+
+        <script src="/static/js/custom.js"></script>
+        <script src="/static/js/dist/jquery.validator.min.js?local=zh-CN"></script>
+</html>

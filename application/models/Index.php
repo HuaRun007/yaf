@@ -45,4 +45,15 @@ class IndexModel
     	$sql = "SELECT * FROM `blog_article` WHERE id = {$id}";
     	return $this->dbh->select_row($sql);
     }
+
+    public function getUserInfo($username='', $password='')
+    {
+        $where = " WHERE isdel=0 AND username= '$username' ";
+
+        if (isset($password) && $password !='') {
+            $where .=  " AND password = '$password' ";
+        }
+        $sql = "SELECT * FROM `".DB_PREFIX."user` ".$where;
+        return $this->dbh->select_row($sql);
+    }
 }
