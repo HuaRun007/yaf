@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-08-04 09:55:35
+/* Smarty version 3.1.31, created on 2017-08-05 16:09:25
   from "D:\www\yaf\application\views\Admin\index.php" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5983d417c04b00_22005522',
+  'unifunc' => 'content_59857d352169a7_65877441',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93331af9713c0b40bf9a5b97a53690b765114a4a' => 
     array (
       0 => 'D:\\www\\yaf\\application\\views\\Admin\\index.php',
-      1 => 1501811646,
+      1 => 1501920510,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5983d417c04b00_22005522 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59857d352169a7_65877441 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_213455983d417bc4ec6_84909251', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1704459857d351c8336_36219992', "body");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Admin/login.php");
 }
 /* {block "body"} */
-class Block_213455983d417bc4ec6_84909251 extends Smarty_Internal_Block
+class Block_1704459857d351c8336_36219992 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_213455983d417bc4ec6_84909251',
+    0 => 'Block_1704459857d351c8336_36219992',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -307,15 +307,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 						<!-- start: User Dropdown -->
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								<i class="halflings-icon white user"></i> Dennis Ji
+								<i class="halflings-icon white user"></i> <?php echo $_smarty_tpl->tpl_vars['user']->value['username'];?>
+
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Account Settings</span>
+ 									<span>帐户设置</span>
 								</li>
-								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="#"><i class="halflings-icon user"></i> 个人信息</a></li>
+								<li><a href="/Admin_Index/logout"><i class="halflings-icon off"></i> 注销登录</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->

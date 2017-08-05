@@ -39,6 +39,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 		));*/
 
 		$session = Yaf_Session::getInstance();
+
 		if ($session->has(SSN_VAR)) {
 			Yaf_Registry::set(SSN_VAR, $session->get(SSN_VAR));
 		} else {
@@ -57,10 +58,10 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 		$config = Yaf_Application::app()->getConfig();
 		$sys = $config->get("sys");
 
-		// if ($sys->encrypt) {
-		// 	$g = new GlobalPlugin();
-		// 	$dispatcher->registerPlugin($g);
-		// }
+		if ($sys->encrypt) {
+			$g = new GlobalPlugin();
+			$dispatcher->registerPlugin($g);
+		}
 
 		// $p = new PrivilegePlugin();
 		// $dispatcher->registerPlugin($p);
@@ -75,6 +76,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 
 		// $dispatcher->setView(new View(APP_PATH . '/application/views',APP_PATH . '/application/cache'));
 		$smarty = new Smarty_Adapter(APP_PATH . '/application/views', Yaf_Application::app()->getConfig()->smarty);
+		Yaf_Dispatcher::getInstance()->disableView();//关闭其自动渲染
   		$dispatcher->setView($smarty);
 	}
 

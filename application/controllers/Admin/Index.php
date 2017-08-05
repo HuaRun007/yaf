@@ -10,13 +10,14 @@ class Admin_IndexController extends Yaf_Controller_Abstract
       public function indexAction()
       {
 
-        if(!Yaf_Registry::has('user'))
+        if(empty($_SESSION['user']))
         {
-            $this->getView()->display("Admin/login.php");
-            return false;
+           return $this->getView()->display("Admin/login.php");
+  
         }
-        $this->getView()->display("Admin/index.php");
-        return false;
+        $this->getView()->assign('user',$_SESSION['user']);
+        return $this->getView()->display("Admin/index.php");
+
       }
 
       public function LoginAction()
@@ -36,24 +37,33 @@ class Admin_IndexController extends Yaf_Controller_Abstract
         
             $errMsg = '用户名不存在!';
             $this->getView()->assign('errMsg', $errMsg);
-            $this->getView()->display("Admin/login.php");
-            return false;            
+            return $this->getView()->display("Admin/login.php");
+          
         }
         $result = $I->getUserInfo($username, $password);
         if(!$result){
             $errMsg = '用户名或密码错误!';
             $this->getView()->assign('errMsg', $errMsg);
-            $this->getView()->display("Admin/login.php");
-            return false;            
+            return $this->getView()->display("Admin/login.php");
+          
         } 
 
-        Yaf_Registry::set('user', $result);
+        session_start();
 
-        $this->getView()->assign('user', $result);
-        $this->getView()->display("Admin/index.php");
-        return false;
+        $_SESSION['user'] = $result;
+
+        $this->redirect("/Admin_Index/index");
+
  
         
       }
 
+
+      public function logoutAction()
+      {
+
+         unset($_SESSION['user']);
+
+         return $this->redirect("/Admin_Index/index");
+      }
 }
